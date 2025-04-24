@@ -1,9 +1,20 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 const URL = 'https://fakestoreapi.com/products'
 
 export const Cards = () => {
-    const [products] = useState([])
+    const [products, setProducts] = useState([])
+
+    const viewProducts = async () => {
+        const response = await fetch(URL)
+        const data = await response.json()
+        setProducts(data)
+    }
+
+    useEffect(() => {
+        viewProducts()
+    }, [])
+
     return (
         <>
             <div className='grid grid-cols-4 gap-4'>

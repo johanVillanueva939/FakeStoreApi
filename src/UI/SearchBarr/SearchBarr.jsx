@@ -26,7 +26,7 @@ export const SearchBarr = ({ onResults, products }) => {
                 value={query}
                 onChange={handleSearch}
                 placeholder="Search products..."
-                className="SearchBarr card_neomorfism "
+                className="SearchBarr card_neomorfism placeholder:text-[var(--color_items_mid_dark)] text-[var(--color_items)] outline-none"
             />
         </div>
     )

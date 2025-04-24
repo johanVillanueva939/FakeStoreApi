@@ -23,7 +23,7 @@ export const MainContainer = () => {
     }
 
     return (
-        <div>
+        <div className='flex flex-col gap-4'>
             <SearchBarr onResults={handleSearchResults} products={products} />
             <Cards products={filteredProducts} />
         </div>

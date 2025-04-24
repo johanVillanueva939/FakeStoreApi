@@ -1,6 +1,15 @@
 .imgCard{
     padding: 3px;
+    width: 550px;
 }
 .divCard{
     padding: 0 0 50px 0;
+}
+.h2div{
+    max-width: 500px;
+    min-width: none;
+}
+.descDiv{
+    max-width: 500px;
+    min-width: none;
 }

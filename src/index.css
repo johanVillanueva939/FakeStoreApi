@@ -1,24 +1,27 @@
 @import "tailwindcss";
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-:root{
-  --bg_color: #363844;
-  --color_items:#7AE3BA;
-  --color_items_mid_dark:#4cbe9ad3;
-  --color_items_dark:#2A4B4D;
+
+:root {
+    --bg_color: #363844;
+    --color_items: #7AE3BA;
+    --color_items_mid_dark: #4cbe9ad3;
+    --color_items_dark: #2A4B4D;
 }
-body{
-  background-color: var(--bg_color);
-  width: 100%;
-  height: 100vh;
-  padding: 15px 50px;
+
+body {
+    background-color: var(--bg_color);
+    width: 100%;
+    height: 100vh;
+    padding: 15px 50px;
 }
-.card_neomorfism{
-  box-shadow: -2px -2px 8px 0px rgba(156, 156, 156, 0.459), 4px 4px 10px 0px rgba(0, 0, 0, 0.61);
-  background-color: var(--bg_color);
-  border-radius: 20px;
+
+.card_neomorfism {
+    box-shadow: -2px -2px 8px 0px rgba(156, 156, 156, 0.459), 4px 4px 10px 0px rgba(0, 0, 0, 0.61);
+    background-color: var(--bg_color);
+    border-radius: 20px;
 }

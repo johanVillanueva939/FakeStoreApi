@@ -1,29 +1,16 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
-const URL = 'https://fakestoreapi.com/products'
+import './Cards.css'
 
-export const Cards = () => {
-    const [products, setProducts] = useState([])
-
-    const viewProducts = async () => {
-        const response = await fetch(URL)
-        const data = await response.json()
-        setProducts(data)
-    }
-
-    useEffect(() => {
-        viewProducts()
-    }, [])
-
+export const Cards = ({ products }) => {
     return (
         <>
             <div className='grid grid-cols-4 gap-4'>
                 {products.map((product) => (
-                    <div key={product.id} className='border p-4 rounded-lg shadow-lg'>
-                        <img src={product.image} alt={product.title} className='w-full h-48 object-cover mb-4' />
-                        <h2 className='text-xl font-bold'>{product.title}</h2>
-                        <p className='text-gray-700'>{product.description}</p>
-                        <p className='text-lg font-semibold'>${product.price}</p>
+                    <div key={product.id} className='divCard card_neomorfism text-[var(--color_items) flex flex-col h-fit justify-center items-center text-center gap-2.5' >
+                        <img src={product.image} alt={product.title} className='imgCard w-full object-contain' />
+                        <h2 className='text-[30px] font-bold text-[var(--color_items)]'>{product.title}</h2>
+                        <p className=' text-white'>{product.description}</p>
+                        <p className='text-3xl font-semibold text-[var(--color_items_mid_dark)]'>${product.price}</p>
                     </div>
                 ))}
             </div>

@@ -1,0 +1,4 @@
+.SearchBarr{
+    width: clamp(300px, 100%, 100%);
+    padding: 10px 20px;
+}

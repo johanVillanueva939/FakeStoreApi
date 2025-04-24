@@ -1,8 +1,1 @@
-import React from 'react'
-
-export const Header = () => {
-    return (
-        <div>Header</div>
-    )
-}
-export default Header
+// This file is no longer needed and can be deleted.
